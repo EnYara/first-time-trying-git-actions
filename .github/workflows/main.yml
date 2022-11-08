@@ -8,12 +8,13 @@
      runs-on: ubuntu-latest
 
      steps:
-       - name: 'Printing folder contents'
-         run: ls
+       
 
        - uses: actions/checkout@v3
 
-       - name: 'After'
-         run: ls
+       - name: "Login to Docker hub"
+         run: docker login --username yara20 --password dckr_pat_31iJ1Z6ypzqihXaS1BaWboqXIMY
+
+       
 
        
